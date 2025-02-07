@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity Awareness Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    .dashboard-header {
+      text-align: center;
+      background: linear-gradient(45deg, #007bff, #6610f2);
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .btn {
+      display: inline-block;
+      text-align: center;
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 1rem;
+      border: none;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .animated-object {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: #007bff;
+      opacity: 0.1;
+      animation: float 6s ease-in-out infinite;
+      border-radius: 50%;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard-header">
+    <h1>Cybersecurity Awareness Dashboard</h1>
+    <p>Your ultimate source for staying safe online!</p>
+  </div>
+
+  <div class="container">
+    <div class="tips-grid">
+      <div class="card">
+        <img src="{{ url_for('static', filename='images/pexels-cottonbro-5474298.jpg') }}" alt="Tip 1 Image">
+        <p><strong>Tip #1:</strong> Use strong passwords with a mix of letters, numbers, and special characters.</p>
+      </div>
+      <div class="card">
+        <img src="{{ url_for('static', filename='images/pexels-pixabay-60504.jpg') }}" alt="Tip 1 Image">
+        <p><strong>Tip #2:</strong> Enable Multi-Factor Authentication (MFA) for accounts wherever possible.</p>
+      </div>
+      <div class="card">
+        <img src="{{ url_for('static', filename='images/pexels-szaboviktor-12704100.jpg') }}" alt="Tip 1 Image">
+        <p><strong>Tip #3:</strong> Keep your operating system, browser, and software up-to-date with the latest patches.</p>
+      </div>
+      <div class="card">
+        <img src="{{ url_for('static', filename='images/pexels-dan-nelson-1667453-5530197.jpg') }}" alt="Tip 1 Image">
+        <p><strong>Tip #4:</strong> Avoid connecting to public Wi-Fi without using a VPN.</p>
+      </div>
+      <div class="card">
+        <img src="{{ url_for('static', filename='images/verify-email.png') }}" alt="Tip 1 Image">
+        <p><strong>Tip #5:</strong> Verify links and email addresses before clicking on them to prevent phishing attacks.</p>
+      </div>
+      <div class="card">
+        <img src="{{ url_for('static', filename='images/pexels-kindelmedia-7054723.jpg') }}" alt="Tip 1 Image">
+        <p><strong>Tip #6:</strong> Back up your data regularly on external drives or secure cloud services.</p>
+      </div>
+      <div class="card">
+        <img src="{{ url_for('static', filename='images/pexels-tracy-le-blanc-67789-607812.jpg') }}" alt="Tip 1 Image">
+        <p><strong>Tip #7:</strong> Never share your passwords or save them in easily accessible locations.</p>
+      </div>
+    </div>
+    <a href="{{ url_for('index') }}" class="btn">Go Back</a>
+  </div>
+
+  <div class="animated-object" style="top: 10%; left: 20%;"></div>
+  <div class="animated-object" style="top: 50%; right: 30%;"></div>
+  <div class="animated-object" style="bottom: 20%; left: 50%;"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

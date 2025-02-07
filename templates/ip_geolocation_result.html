@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation Result</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Geolocation Tool</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card p-4">
+                    <h3 class="text-center mb-4">Geolocation Result</h3>
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <th>IP Address</th>
+                                <td>{{ ip }}</td>
+                            </tr>
+                            <tr>
+                                <th>Country</th>
+                                <td>{{ country }}</td>
+                            </tr>
+                            <tr>
+                                <th>Region</th>
+                                <td>{{ region }}</td>
+                            </tr>
+                            <tr>
+                                <th>City</th>
+                                <td>{{ city }}</td>
+                            </tr>
+                            <tr>
+                                <th>Latitude</th>
+                                <td>{{ latitude }}</td>
+                            </tr>
+                            <tr>
+                                <th>Longitude</th>
+                                <td>{{ longitude }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="text-center">
+                        <a href="/ip-geolocation" class="btn btn-secondary mt-3">Check Another IP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5">
+        <p>Made with ❤️ by Gaurav</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

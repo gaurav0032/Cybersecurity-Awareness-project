@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity Awareness Quiz</title>
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .quiz-container {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .question {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin: 8px 0;
+  }
+  
+  #quizResult {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  body {
+              margin: 0;
+              font-family: Arial, sans-serif;
+          }
+  
+          .dashboard {
+              display: flex;
+              height: 100vh;
+          }
+  
+          .sidebar {
+              width: 250px;
+              background-color: #343a40;
+              color: white;
+              display: flex;
+              flex-direction: column;
+              padding: 15px;
+          }
+  
+          .sidebar h2 {
+              text-align: center;
+              font-size: 22px;
+              margin-bottom: 20px;
+          }
+  
+          .sidebar a {
+              display: block;
+              text-decoration: none;
+              color: white;
+              padding: 10px 15px;
+              margin: 5px 0;
+              border-radius: 5px;
+              background-color: #495057;
+              text-align: center;
+          }
+  
+          .sidebar a:hover {
+              background-color: #6c757d;
+          }
+  
+          .content {
+              flex-grow: 1;
+              padding: 20px;
+              background-color: #f8f9fa;
+          }
+  
+          .hidden {
+              display: none;
+          }
+      </style>
+      
+  <link rel="stylesheet" href="/static/styles.css">
+  <script defer src="/static/scripts.js"></script>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Cybersecurity Awareness Quiz</h1>
+    <form id="quizForm">
+      <!-- Question 1 -->
+      <div class="question">
+        <p>1. What does 'Phishing' mean?</p>
+        <label><input type="radio" name="q1" value="correct"> An attempt to steal personal information</label>
+        <label><input type="radio" name="q1" value="wrong"> Fishing in a lake</label>
+        <label><input type="radio" name="q1" value="wrong"> Playing online games</label>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <p>2. Which is a strong password?</p>
+        <label><input type="radio" name="q2" value="wrong"> 123456</label>
+        <label><input type="radio" name="q2" value="wrong"> mypassword</label>
+        <label><input type="radio" name="q2" value="correct"> p@S5!word_2023</label>
+      </div>
+
+      <!-- Add More Questions Here -->
+      <div class="question">
+        <p>3. Which of these is a two-factor authentication method?</p>
+        <label><input type="radio" name="q3" value="wrong"> Using only a password</label>
+        <label><input type="radio" name="q3" value="wrong"> PIN only</label>
+        <label><input type="radio" name="q3" value="correct"> Password + OTP</label>
+      </div>
+
+    <div class="question">
+        <p>4. What does 'Ransomware' do?</p>
+            <label><input type="radio" name="q4" value="correct"> Encrypts your files for ransom</label>
+            <label><input type="radio" name="q4" value="wrong"> Installs antivirus software</label>
+            <label><input type="radio" name="q4" value="wrong"> Speeds up system performance</label>
+        </div>
+
+    <div class="question">
+        <p>5. What is two-factor authentication?</p>
+            <label><input type="radio" name="q5" value="wrong"> Using a password and PIN</label>
+            <label><input type="radio" name="q5" value="correct"> Using two methods to verify identity<label>
+            <label><input type="radio" name="q5" value="wrong"> None of the above</label>
+        </div>
+
+    <div class="question">
+        <p>6. What is the full form of SQL?</p>
+            <label><input type="radio" name="q6" value="correct"> Structured Query Language</label>
+            <label><input type="radio" name="q6" value="wrong"> Sequential Query Language</label>
+            <label><input type="radio" name="q6" value="wrong"> System Query Logic</label>
+        </div>
+
+    <div class="question">
+        <p>7. What is a VPN used for?</p>
+            <label><input type="radio" name="q7" value="wrong"> Hiding your identity</label>
+            <label><input type="radio" name="q7" value="wrong"> Encrypting online activity</label>
+            <label><input type="radio" name="q7" value="correct"> Both A and B</label>
+        </div>
+
+    <div class="question">
+        <p>8. What is malware?</p>
+            <label><input type="radio" name="q8" value="correct"> Any malicious software</label>
+            <label><input type="radio" name="q8" value="wrong"> Virus only</label>
+            <label><input type="radio" name="q8" value="wrong"> Hardware issue</label>
+        </div>
+
+    <div class="question">
+        <p>9. Which is a Zero-Day vulnerability?</p>
+            <label><input type="radio" name="q9" value="correct"> Recently discovered security flaw</label>
+            <label><input type="radio" name="q9" value="wrong"> An old issue</label>
+            <label><input type="radio" name="q9" value="wrong"> None of the above</label>
+        </div>
+        
+    <div class="question">
+        <p>10. What is social engineering?</p>
+            <label><input type="radio" name="q10" value="correct"> Human manipulation</label>
+            <label><input type="radio" name="q10" value="wrong"> Hardware hack</label>
+            <label><input type="radio" name="q10" value="wrong"> Software bug</label>
+        </div>
+
+      <button type="button" id="submitQuiz">Submit Quiz</button>
+    </form>
+    <div id="quizResult"></div>
+  </div>
+</body>
+</html>
