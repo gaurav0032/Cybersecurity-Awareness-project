@@ -21,7 +21,7 @@ Additionally, the project includes **Security Tips** and **Quizzes** to educate 
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository_url>
+   git clone <https://github.com/gaurav0032/Cybersecurity-Awareness-project.git>
    cd cybersecurity-awareness-tool
    ```
 
