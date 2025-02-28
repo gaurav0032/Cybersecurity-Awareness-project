@@ -203,5 +203,13 @@ def logout():
     flash("You have been logged out.", "info")
     return redirect(url_for("login"))
 
+@app.route('/http_header_analyzer', methods=['GET', 'POST'])
+def http_header_analyzer():
+    if request.method == 'POST':
+        url = request.form['url']
+        headers = requests.get(url).headers
+        return render_template('http_header_analyzer.html', headers=headers)
+    return render_template('http_header_analyzer.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
